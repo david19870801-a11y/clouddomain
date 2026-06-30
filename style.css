@@ -1,0 +1,464 @@
+/* ==========================
+   Cloud Domain Limited
+   style.css
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f6f8fb;
+    color:#333;
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#25D366,#16a34a);
+    color:#fff;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:35px;
+}
+
+.hero-image{
+    max-width:320px;
+    margin:0 auto 35px;
+}
+
+.hero-image img{
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+    opacity:.95;
+}
+
+.badges{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.badges div{
+    background:rgba(255,255,255,.16);
+    padding:12px 20px;
+    border-radius:999px;
+    backdrop-filter:blur(8px);
+    font-size:15px;
+}
+
+.badges i{
+    margin-right:8px;
+}
+
+/* Buttons */
+
+.btn-primary,
+.btn-footer{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:35px;
+
+    padding:18px 34px;
+
+    background:#fff;
+
+    color:#25D366;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border-radius:999px;
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+
+}
+
+.btn-primary:hover,
+.btn-footer:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.25);
+
+}
+
+/* Floating */
+
+.floating-whatsapp{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    z-index:999;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+.floating-whatsapp:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* Features */
+
+.features{
+
+    padding:90px 20px;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    font-size:36px;
+
+    margin-bottom:55px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card i{
+
+    font-size:45px;
+
+    color:#25D366;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+/* CTA */
+
+.cta{
+
+    background:#25D366;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+.cta h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    font-size:19px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* FAQ */
+
+.faq{
+
+    padding:90px 20px;
+
+}
+
+.faq h2{
+
+    text-align:center;
+
+    font-size:36px;
+
+    margin-bottom:50px;
+
+}
+
+.faq-item{
+
+    background:#fff;
+
+    margin-bottom:25px;
+
+    border-radius:16px;
+
+    padding:28px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+
+}
+
+.faq-item h3{
+
+    margin-bottom:12px;
+
+    color:#25D366;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#111827;
+
+    color:#ddd;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+footer h3{
+
+    color:#fff;
+
+    margin-bottom:12px;
+
+}
+
+footer p{
+
+    margin-bottom:30px;
+
+}
+
+.btn-footer{
+
+    background:#25D366;
+
+    color:#fff;
+
+}
+
+.copyright{
+
+    margin-top:35px;
+
+    color:#888;
+
+    font-size:14px;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+.cta h2{
+
+font-size:32px;
+
+}
+
+.features h2,
+.faq h2{
+
+font-size:30px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+padding:45px 18px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+.subtitle{
+
+font-size:16px;
+
+}
+
+.badges{
+
+flex-direction:column;
+
+}
+
+.badges div{
+
+width:100%;
+
+}
+
+.btn-primary,
+.btn-footer{
+
+width:100%;
+
+font-size:17px;
+
+padding:16px;
+
+}
+
+.floating-whatsapp{
+
+width:58px;
+
+height:58px;
+
+font-size:30px;
+
+right:15px;
+
+bottom:15px;
+
+}
+
+}
